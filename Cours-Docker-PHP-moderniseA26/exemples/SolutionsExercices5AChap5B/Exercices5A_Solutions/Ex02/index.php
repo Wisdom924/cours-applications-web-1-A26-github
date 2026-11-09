@@ -1,0 +1,4 @@
+<?php
+// Exercices5A — Corrigé 2 : Salutation
+$nom = 'Dini'; $salutation = 'Bonjour'; $resultat = "$salutation $nom";
+?><!doctype html><html lang="fr"><head><meta charset="utf-8"><title>PHP – Cours 5</title><style>body{font:16px system-ui;max-width:850px;margin:35px auto;line-height:1.6}section{padding:12px;border-bottom:1px solid #ddd}code{background:#eee;padding:2px}</style></head><body><h1>Exercices5A – Exercice 2 : Salutation</h1><p>Créer $nom et $salutation puis afficher « Bonjour Dini ».</p><section><strong>Résultat :</strong> <?= htmlspecialchars((string)$resultat, ENT_QUOTES | ENT_SUBSTITUTE, "UTF-8") ?></section></body></html>

@@ -1,0 +1,6 @@
+<?php
+// Exercices5A — Exercice 5 : Condition âge et sexe
+// CONSIGNE : Afficher un message pour une personne de sexe féminin âgée de 21 à 40 ans inclusivement.
+// TODO : écrire votre solution PHP ici.
+$resultat = 'À compléter';
+?><!doctype html><html lang="fr"><head><meta charset="utf-8"><title>PHP – Cours 5</title><style>body{font:16px system-ui;max-width:850px;margin:35px auto;line-height:1.6}section{padding:12px;border-bottom:1px solid #ddd}code{background:#eee;padding:2px}</style></head><body><h1>Exercices5A – Exercice 5 : Condition âge et sexe</h1><p>Afficher un message pour une personne de sexe féminin âgée de 21 à 40 ans inclusivement.</p><section><strong>Résultat :</strong> <?= htmlspecialchars((string)$resultat, ENT_QUOTES | ENT_SUBSTITUTE, "UTF-8") ?></section></body></html>

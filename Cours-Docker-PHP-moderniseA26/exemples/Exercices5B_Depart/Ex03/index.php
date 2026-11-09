@@ -1,0 +1,55 @@
+<?php
+// Exercices5B — Exercice 3 : Critères indépendants
+// CONSIGNE : Afficher « Vous êtes majeur » si âge >= 18 ET « Vous êtes étudiant » si statut étudiant. Les deux peuvent apparaître.
+// TODO : écrire votre solution PHP ici.
+$resultat;
+
+$age = 19;
+$etudiant = true;
+
+if ($age >= 18) {
+    $resultat = "Vous êtes majeur";
+}
+
+if ($etudiant == true) {
+    $resultat = "Vous êtes étudiant";
+}
+
+if ($resultat == "") {
+    $resultat = "Aucun critère rempli";
+}
+
+?>
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>PHP – Cours 5</title>
+    <style>
+        body {
+            font: 16px system-ui;
+            max-width: 850px;
+            margin: 35px auto;
+            line-height: 1.6
+        }
+
+        section {
+            padding: 12px;
+            border-bottom: 1px solid #ddd
+        }
+
+        code {
+            background: #eee;
+            padding: 2px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercices5B – Exercice 3 : Critères indépendants</h1>
+    <p>Afficher « Vous êtes majeur » si âge >= 18 ET « Vous êtes étudiant » si statut étudiant. Les deux peuvent apparaître.</p>
+    <section><strong>Résultat :</strong> <?= htmlspecialchars((string)$resultat, ENT_QUOTES | ENT_SUBSTITUTE, "UTF-8") ?></section>
+</body>
+
+</html>

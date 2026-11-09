@@ -1,0 +1,4 @@
+<?php
+// Exercices5A — Corrigé 3 : Types et valeurs
+$x = 10; $y = 3.5; $z = 'PHP'; $resultat = 'x : '.get_debug_type($x).', y : '.get_debug_type($y).', z : '.get_debug_type($z);
+?><!doctype html><html lang="fr"><head><meta charset="utf-8"><title>PHP – Cours 5</title><style>body{font:16px system-ui;max-width:850px;margin:35px auto;line-height:1.6}section{padding:12px;border-bottom:1px solid #ddd}code{background:#eee;padding:2px}</style></head><body><h1>Exercices5A – Exercice 3 : Types et valeurs</h1><p>Observer trois variables $x, $y, $z avec gettype() et var_dump(). L’énoncé original ne fournit pas leurs affectations successives : utiliser des valeurs d’exemple.</p><section><strong>Résultat :</strong> <?= htmlspecialchars((string)$resultat, ENT_QUOTES | ENT_SUBSTITUTE, "UTF-8") ?></section></body></html>

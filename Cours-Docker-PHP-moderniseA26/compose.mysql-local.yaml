@@ -1,0 +1,15 @@
+# Variante enseignant : utiliser le MySQL déjà installé sur Windows.
+# Exécution : docker compose -f compose.mysql-local.yaml up --build -d
+services:
+  web:
+    build: .
+    ports:
+      - "127.0.0.1:8082:80"
+    volumes:
+      - ./exemples:/var/www/html
+    environment:
+      DB_HOST: host.docker.internal
+      DB_PORT: "3306"
+      DB_NAME: ${DB_NAME:-commerce}
+      DB_USER: ${DB_USER:-coursphp}
+      DB_PASSWORD: ${DB_PASSWORD:?Définir DB_PASSWORD dans .env}

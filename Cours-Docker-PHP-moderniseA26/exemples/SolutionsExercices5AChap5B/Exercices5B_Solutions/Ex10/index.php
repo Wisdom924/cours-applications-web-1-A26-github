@@ -1,0 +1,4 @@
+<?php
+// Exercices5B — Corrigé 10 : Somme des cinq entiers
+$somme=0;for($i=1;$i<=5;$i++)$somme+=$i;$resultat="Somme : $somme";
+?><!doctype html><html lang="fr"><head><meta charset="utf-8"><title>PHP – Cours 5</title><style>body{font:16px system-ui;max-width:850px;margin:35px auto;line-height:1.6}section{padding:12px;border-bottom:1px solid #ddd}code{background:#eee;padding:2px}</style></head><body><h1>Exercices5B – Exercice 10 : Somme des cinq entiers</h1><p>Calculer 1+2+3+4+5 avec for.</p><section><strong>Résultat :</strong> <?= htmlspecialchars((string)$resultat, ENT_QUOTES | ENT_SUBSTITUTE, "UTF-8") ?></section></body></html>

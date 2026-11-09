@@ -1,0 +1,47 @@
+<?php
+// Exercices5B — Exercice 2 : Connexion
+// CONSIGNE : $connecte vrai : Bienvenue ! sinon Veuillez vous connecter.
+// TODO : écrire votre solution PHP ici.
+$resultat;
+
+$connecte = true;
+if($connecte == true) {
+    $resultat = "bienvenue !";
+} else {
+    $resultat = "Veillez vous connecter.";
+}
+
+?>
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>PHP – Cours 5</title>
+    <style>
+        body {
+            font: 16px system-ui;
+            max-width: 850px;
+            margin: 35px auto;
+            line-height: 1.6
+        }
+
+        section {
+            padding: 12px;
+            border-bottom: 1px solid #ddd
+        }
+
+        code {
+            background: #eee;
+            padding: 2px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercices5B – Exercice 2 : Connexion</h1>
+    <p>$connecte vrai : Bienvenue ! sinon Veuillez vous connecter.</p>
+    <section><strong>Résultat :</strong> <?= htmlspecialchars((string)$resultat, ENT_QUOTES | ENT_SUBSTITUTE, "UTF-8") ?></section>
+</body>
+
+</html>
